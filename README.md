@@ -1,5 +1,5 @@
 # leetcode
-Solutions to leetcode problems
+Solutions to Leetcode problems
 
 
 ###Notes:
