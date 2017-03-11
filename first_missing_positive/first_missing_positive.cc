@@ -20,24 +20,15 @@ public:
 		}			
 		curr++;
 	}
-	/*cout << last_neg << endl;
-
-	for(int i = 0; i < n; i++){
-		cout << nums[i] << " ";
-	}
-	cout << endl;*/
-
+	
 	if(last_neg == n)
 		return 1;
 	
 
 	//ith index will correspond to i+1th value
 	for(int i = last_neg; i < n; i++){
-		//cout << "outer nums i  " << nums[i] << endl;
 		if(abs(nums[i]) <= n && abs(nums[i]) >= 1){
-			//cout << "nums i  " << nums[i] << endl;
 			if(abs(nums[i])-1 < last_neg && nums[abs(nums[i])-1] < 0){
-				//cout << "ind " << i << endl;
 				nums[abs(nums[i])-1] *= -1;
 			}
 			else if(abs(nums[i])-1 >= last_neg && nums[abs(nums[i])-1] > 0){
@@ -45,14 +36,6 @@ public:
 			}
 		}
 	}
-
-	/*cout << endl;
-	
-	for(int i = 0; i < n; i++){
-		cout << nums[i] << " ";
-	}
-	
-	cout << endl;*/
 
 	for(int i = 0; i < n; i++){
 		if(i < last_neg && nums[i] < 0){
