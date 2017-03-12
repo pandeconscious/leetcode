@@ -17,10 +17,10 @@ public:
 			}
 			else{
 			    stringstream ss;
-                ss << count;
-				temp += ss.str();
-				temp += str[i-1];
-				count = 1;
+               		    ss << count;
+			    temp += ss.str();
+			    temp += str[i-1];
+			    count = 1;
 			}
 		}
 		stringstream ss;
