@@ -6,6 +6,8 @@
 #         self.right = None
 
 class Solution(object):
+    #not the most optimum solution:
+    #https://www.geeksforgeeks.org/diameter-of-a-binary-tree/
     def preprocess(self, root):
         #preprocess to store in val the tuple storing max depth of 
         # a leaf in the left subtree and right subtree 
