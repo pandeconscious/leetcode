@@ -6,15 +6,15 @@
 class Solution:
     def removeDuplicates(self, nums: List[int]) -> int:
         """
-        Example of how each iteration will solve
+        Example of how each iteration will run
         0|0|1,1,2,3,3,3
         0,1|0,1|2,3,3,3
         0,1,2|1,0|3,3,3
         0,1,2,3|0,1|3,3
         """
         n = len(nums)
-        if n == 1:
-            return 1
+        if n == 0 or n ==1:
+            return n
         #i to point to the end element of unique sorted elements
         #j to point to the beginning of the yet to be examined region
         #note that there will be a grabage region in between which 
@@ -30,8 +30,4 @@ class Solution:
             while j < n and nums[j] == nums[i]:
                 j += 1
         return i+1
-
-        
-
-
-
+    
