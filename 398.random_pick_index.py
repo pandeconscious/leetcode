@@ -1,3 +1,6 @@
+# this is an O(n) space with O(1) time solution
+# there are solutions that do O(1) space and O(n) time also - using reservoir sampling - need to readup on those
+
 from collections import defaultdict
 import random
 class Solution:
